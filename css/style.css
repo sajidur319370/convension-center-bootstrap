@@ -1,0 +1,139 @@
+/* _____________________________GOOGLE FONT_______________________ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* __________________COMMON CSSS_________________________________________________ */
+
+:root {
+    --color-pink: #f77199;
+    --color-lightPink: #f5c3d2;
+    --color-yellow: #e2df15;
+    --color-lightYellow: #e6d382ef;
+    --color-white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-yellow {
+    color: var(--color-yellow);
+}
+
+.bg-lightYellow {
+    background-color: var(--color-lightYellow);
+}
+
+.bg-lightPink {
+    background-color: var(--color-lightPink);
+}
+
+.color-pink {
+    color: var(--color-pink);
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.bg-white {
+    color: var(--color-white);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* _____________NAVBAR CSS___________________ */
+
+.nav-item:hover {
+    opacity: 0.5;
+}
+
+
+/* ____________________BANNER CSS____________________ */
+
+.banner__intro {
+    margin-top: 5rem;
+}
+
+.banner__intro--all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* //////////FOR EXTRA SMALL DEVICE//////////// */
+
+@media (max-width:575.98px) {
+    .banner__intro--title {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    .banner__intro--subtitle {
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 8px;
+    }
+}
+
+
+/* //////////FOR SMALL DEVICE//////////// */
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .banner__intro--title {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .banner__intro--subtitle {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 8px;
+    }
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* _________________MOMENT CSS______________ */
+
+
+/* ______________PAACKAGE CSS________________ */
+
+.package__item {
+    transition: transform 0.4s ease-out;
+}
+
+.package__item:hover {
+    transform: scaleY(1.2);
+    transform-origin: bottom;
+    background-color: var(--color-lightYellow);
+    color: var(--color-white);
+}
+
+.package__item:hover.package__item>.btn {
+    background-color: var(--color-white);
+}
