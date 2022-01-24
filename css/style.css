@@ -127,6 +127,10 @@ ol {
     transition: transform 0.4s ease-out;
 }
 
+.badge {
+    display: none;
+}
+
 .package__item:hover {
     transform: scaleY(1.2);
     transform-origin: bottom;
@@ -136,4 +140,8 @@ ol {
 
 .package__item:hover.package__item>.btn {
     background-color: var(--color-white);
+}
+
+.package__item:hover.package__item>.badge {
+    display: block;
 }
