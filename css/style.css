@@ -10,10 +10,15 @@
     --color-yellow: #e2df15;
     --color-lightYellow: #e6d382ef;
     --color-white: #ffffff;
+    --color-dark: #0B0D17;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.bg-footer {
+    background-color: var(--color-dark);
 }
 
 .color-yellow {
@@ -47,6 +52,10 @@ body {
 ul,
 ol {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -144,4 +153,12 @@ ol {
 
 .package__item:hover.package__item>.badge {
     display: block;
+}
+
+
+/* ______________________FOOTER________________ */
+
+.footer__button {
+    height: 80px;
+    width: 220px
 }
